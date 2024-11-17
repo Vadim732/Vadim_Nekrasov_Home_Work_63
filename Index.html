@@ -68,9 +68,9 @@
             if (password !== confirmPassword) {
                 $('#password, #confirmPassword').addClass('is-invalid');
                 $('#confirmPassword').after('<div class="error-message" style="color: red;">Passwords must match!</div>');
-            } else if (password.length < 4) {
+            } else if (password.length < 6) {
                 $('#password, #confirmPassword').addClass('is-invalid');
-                $('#confirmPassword').after('<div class="error-message" style="color: red;">Password must be more than 3 characters long!</div>');
+                $('#confirmPassword').after('<div class="error-message" style="color: red;">Password must be more than 6 characters long!</div>');
             } else {
                 var ObjectData = {
                     email: email,
